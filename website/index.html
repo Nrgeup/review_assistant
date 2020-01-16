@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Review Writing & Analysis Assistant</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="container mx-auto" >
+        <div class="row">
+            <div class="d-none d-xs-none d-sm-none d-md-block col-md-5  align-self-center center" style="margin-top: 80px;">
+                <center>
+                    <img src="static/image.gif" alt="Here is an image." width="400" class="img-responsive img-rounded center-block">
+                </center>
+            </div>
+
+
+            <div class="col-md-7 col-sm-12 col-xs-12 ">
+                <!-------------------------  Begin  ------------------------->
+                <div class=container"><br>
+                    <center>
+                    <h2>Review Writing & Analysis Assistant</h2>
+                    </center>
+                </div>
+
+                <div class=container"><br>
+                    <!-- form begin -->
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-12">
+                            <!-- form begin -->
+                                <form  action="" method="post" role="form">
+                                    {{ form.csrf }}
+                                    <div class="form-group">
+                                        {{ form.review_text }}
+                                    </div>
+
+                                    <center>
+                                        {{ form.generate_stats }}
+                                        {{ form.analyze_stats }}
+                                    </center>
+                                    <br>
+                                    <ul class="list-group">
+                                    {% if analysis_sentiment %}
+                                        <li class="list-group-item list-group-item-success">{{ analysis_sentiment|safe }}</li>
+                                    {% endif %}
+                                     {% if analysis_useful %}
+                                        <li class="list-group-item list-group-item-info">{{ analysis_useful|safe }}</li>
+                                    {% endif %}
+                                    {% if analysis_summary %}
+                                        <li class="list-group-item list-group-item-warning">{{ analysis_summary|safe }}</li>
+                                    {% endif %}
+
+
+                                    </ul>
+                                </form>
+                            <!-- form end -->
+                            <br>
+
+                            {% for message in form.review_text.errors %}
+                            <div class="flash">{{ message }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+
+                <!-------------------------  End  ------------------------->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer navbar-fixed-bottom font-small blue">
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">&copy 2020 Copyright:
+              <a href="https://nrgeup.github.io/resume/">Ke Wang</a>,
+              <a href="http://chaiz-pku.github.io/">Zi Chai</a>,
+              Danyang Li
+               <br>
+              Google ML Winter Camp (Beijing)
+              <br>
+              <small><a href="https://github.com/Nrgeup/review_assistant">Codes here!</a> | Trained on <a href="https://www.kaggle.com/snap/amazon-fine-food-reviews">Amazon Fine Food Reviews</a> dataset. | Powered by <a href="https://palletsprojects.com/p/flask/">Flask</a> and <a href="https://pytorch.org/">Pytorch</a>.</small>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
+
+</body>
+
+</html>

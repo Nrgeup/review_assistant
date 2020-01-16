@@ -1,0 +1,416 @@
+nohup: ignoring input
+2020-01-16 11:06:12,163 - INFO : Model save path:outputs/1579143972/, log:log_2020_01_16_03_06_12.txt
+2020-01-16 11:06:12,231 - INFO : You are now using 1 GPU - 0 local_rank - -1
+2020-01-16 11:06:12,231 - INFO : Enviroment setup success!
+2020-01-16 11:06:12,231 - INFO : Start initialization...
+2020-01-16 11:06:13,061 - INFO : End of preparing tokenizer...
+2020-01-16 11:12:26,124 - INFO : End of preparing training dataset...
+2020-01-16 11:13:02,523 - INFO : End of preparing test dataset...
+2020-01-16 11:13:08,758 - INFO : End of creating models...
+2020-01-16 11:13:08,761 - INFO : model info: n_trainable_params: 110074370, n_nontrainable_params: 0
+2020-01-16 11:13:08,762 - INFO : > hyper parameters:
+2020-01-16 11:13:08,762 - INFO : >>> if_train: True
+2020-01-16 11:13:08,762 - INFO : >>> if_load_from_checkpoint: False
+2020-01-16 11:13:08,762 - INFO : >>> seed: 666
+2020-01-16 11:13:08,762 - INFO : >>> fp16: False
+2020-01-16 11:13:08,762 - INFO : >>> fp16_opt_level: O1
+2020-01-16 11:13:08,762 - INFO : >>> local_rank: -1
+2020-01-16 11:13:08,762 - INFO : >>> checkpoint_name: None
+2020-01-16 11:13:08,762 - INFO : >>> model_file: model_params.model
+2020-01-16 11:13:08,762 - INFO : >>> dataset_path: ../datasets/amazon-fine-food-reviews/
+2020-01-16 11:13:08,762 - INFO : >>> model: useful-predict
+2020-01-16 11:13:08,762 - INFO : >>> pretrained_bert_name: bert-base-uncased
+2020-01-16 11:13:08,762 - INFO : >>> max_seq_len: 80
+2020-01-16 11:13:08,763 - INFO : >>> max_sent_len: 6
+2020-01-16 11:13:08,763 - INFO : >>> batch_size: 50
+2020-01-16 11:13:08,763 - INFO : >>> num_epoch: 30000000
+2020-01-16 11:13:08,763 - INFO : >>> dropout: 0.1
+2020-01-16 11:13:08,763 - INFO : >>> bert_dim: 768
+2020-01-16 11:13:08,763 - INFO : >>> polarities_dim: 2
+2020-01-16 11:13:08,763 - INFO : >>> lr: 3e-05
+2020-01-16 11:13:08,763 - INFO : >>> max_grad_norm: 1.0
+2020-01-16 11:13:08,763 - INFO : >>> num_total_steps: 1000
+2020-01-16 11:13:08,763 - INFO : >>> num_warmup_steps: 100
+2020-01-16 11:13:08,763 - INFO : >>> timestamp: 1579143972
+2020-01-16 11:13:08,763 - INFO : >>> model_save_path: outputs/1579143972/
+2020-01-16 11:13:08,763 - INFO : >>> log_file: outputs/1579143972/log_2020_01_16_03_06_12.txt
+2020-01-16 11:13:08,763 - INFO : >>> log: <enviroment_setup.Logger object at 0x7f37d53a4150>
+2020-01-16 11:13:08,763 - INFO : >>> logger: <Logger outputs/1579143972/log_2020_01_16_03_06_12.txt (DEBUG)>
+2020-01-16 11:13:08,763 - INFO : >>> n_gpu: 1
+2020-01-16 11:13:08,764 - INFO : >>> device: cuda
+2020-01-16 11:13:08,764 - INFO : >>> train_data_file: ../datasets/amazon-fine-food-reviews/train_data.csv
+2020-01-16 11:13:08,764 - INFO : >>> test_data_file: ../datasets/amazon-fine-food-reviews/test_data.csv
+2020-01-16 11:13:08,764 - INFO : >>> train_batch_size: 50
+2020-01-16 11:13:08,764 - INFO : Start training...
+2020-01-16 11:13:08,764 - INFO : End of data loader...
+2020-01-16 11:13:08,765 - INFO : End of building optimizer
+2020-01-16 11:13:09,867 - INFO : Train: Epoch: 1, batch: 0, train_loss: 13.9693, train_acc: 0.4400
+2020-01-16 11:13:09,867 - INFO : Start testing...
+/home/zichai_pku/.local/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1515: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  average, "true nor predicted", 'F-score is', len(true_sum)
+2020-01-16 11:14:36,091 - INFO : Test: Epoch: 1 of 30000000 took: 1.102s, test_acc: 0.3460(best: 0.0000), test_f1: 0.1750(best: 0.0000)
+2020-01-16 11:14:36,091 - INFO : Done! Total time= 1.102s
+2020-01-16 11:14:36,873 - INFO : Create highest acc: 0.34602015988877305
+2020-01-16 11:14:53,745 - INFO : Train: Epoch: 1, batch: 20, train_loss: 9.6023, train_acc: 0.5140
+2020-01-16 11:15:10,610 - INFO : Train: Epoch: 1, batch: 40, train_loss: 3.5292, train_acc: 0.5530
+2020-01-16 11:15:27,540 - INFO : Train: Epoch: 1, batch: 60, train_loss: 3.1448, train_acc: 0.5890
+2020-01-16 11:15:44,431 - INFO : Train: Epoch: 1, batch: 80, train_loss: 2.6342, train_acc: 0.5630
+2020-01-16 11:16:01,390 - INFO : Train: Epoch: 1, batch: 100, train_loss: 2.6380, train_acc: 0.5360
+2020-01-16 11:16:18,349 - INFO : Train: Epoch: 1, batch: 120, train_loss: 3.3258, train_acc: 0.5050
+2020-01-16 11:16:35,315 - INFO : Train: Epoch: 1, batch: 140, train_loss: 2.6965, train_acc: 0.5600
+2020-01-16 11:16:52,259 - INFO : Train: Epoch: 1, batch: 160, train_loss: 1.8864, train_acc: 0.5670
+2020-01-16 11:17:09,191 - INFO : Train: Epoch: 1, batch: 180, train_loss: 1.6287, train_acc: 0.5810
+2020-01-16 11:17:26,123 - INFO : Train: Epoch: 1, batch: 200, train_loss: 2.1695, train_acc: 0.5540
+2020-01-16 11:17:26,124 - INFO : Start testing...
+2020-01-16 11:18:52,451 - INFO : Test: Epoch: 1 of 30000000 took: 257.359s, test_acc: 0.6680(best: 0.3460), test_f1: 0.3513(best: 0.1750)
+2020-01-16 11:18:52,451 - INFO : Done! Total time= 258.461s
+2020-01-16 11:18:55,691 - INFO : Create highest acc: 0.6679990731085622
+2020-01-16 11:19:12,598 - INFO : Train: Epoch: 1, batch: 220, train_loss: 2.2663, train_acc: 0.5480
+2020-01-16 11:19:29,562 - INFO : Train: Epoch: 1, batch: 240, train_loss: 1.5191, train_acc: 0.5880
+2020-01-16 11:19:46,474 - INFO : Train: Epoch: 1, batch: 260, train_loss: 1.4302, train_acc: 0.5500
+2020-01-16 11:20:03,413 - INFO : Train: Epoch: 1, batch: 280, train_loss: 1.3372, train_acc: 0.5610
+2020-01-16 11:20:20,354 - INFO : Train: Epoch: 1, batch: 300, train_loss: 1.2243, train_acc: 0.5960
+2020-01-16 11:20:37,303 - INFO : Train: Epoch: 1, batch: 320, train_loss: 1.5857, train_acc: 0.5960
+2020-01-16 11:20:54,233 - INFO : Train: Epoch: 1, batch: 340, train_loss: 0.7027, train_acc: 0.6590
+2020-01-16 11:21:11,168 - INFO : Train: Epoch: 1, batch: 360, train_loss: 0.7899, train_acc: 0.5820
+2020-01-16 11:21:28,101 - INFO : Train: Epoch: 1, batch: 380, train_loss: 0.7227, train_acc: 0.6470
+2020-01-16 11:21:45,047 - INFO : Train: Epoch: 1, batch: 400, train_loss: 0.8124, train_acc: 0.5950
+2020-01-16 11:21:45,048 - INFO : Start testing...
+2020-01-16 11:23:11,398 - INFO : Test: Epoch: 1 of 30000000 took: 516.283s, test_acc: 0.4522(best: 0.6680), test_f1: 0.2909(best: 0.3513)
+2020-01-16 11:23:11,398 - INFO : Done! Total time= 774.744s
+2020-01-16 11:23:28,313 - INFO : Train: Epoch: 1, batch: 420, train_loss: 0.8097, train_acc: 0.6390
+2020-01-16 11:23:45,247 - INFO : Train: Epoch: 1, batch: 440, train_loss: 0.6506, train_acc: 0.6780
+2020-01-16 11:24:02,191 - INFO : Train: Epoch: 1, batch: 460, train_loss: 0.9448, train_acc: 0.5880
+2020-01-16 11:24:19,111 - INFO : Train: Epoch: 1, batch: 480, train_loss: 0.9337, train_acc: 0.6070
+2020-01-16 11:24:36,071 - INFO : Train: Epoch: 1, batch: 500, train_loss: 0.7200, train_acc: 0.6480
+2020-01-16 11:24:53,008 - INFO : Train: Epoch: 1, batch: 520, train_loss: 0.8607, train_acc: 0.5880
+2020-01-16 11:25:09,924 - INFO : Train: Epoch: 1, batch: 540, train_loss: 0.7517, train_acc: 0.6540
+2020-01-16 11:25:26,875 - INFO : Train: Epoch: 1, batch: 560, train_loss: 0.8149, train_acc: 0.6570
+2020-01-16 11:25:43,799 - INFO : Train: Epoch: 1, batch: 580, train_loss: 0.7087, train_acc: 0.6500
+2020-01-16 11:26:00,734 - INFO : Train: Epoch: 1, batch: 600, train_loss: 0.7225, train_acc: 0.6630
+2020-01-16 11:26:00,735 - INFO : Start testing...
+2020-01-16 11:27:27,118 - INFO : Test: Epoch: 1 of 30000000 took: 771.969s, test_acc: 0.6924(best: 0.6680), test_f1: 0.3670(best: 0.3513)
+2020-01-16 11:27:27,118 - INFO : Done! Total time= 1546.713s
+2020-01-16 11:27:30,381 - INFO : Create highest acc: 0.6923879040667362
+2020-01-16 11:27:47,284 - INFO : Train: Epoch: 1, batch: 620, train_loss: 0.6829, train_acc: 0.6750
+2020-01-16 11:28:04,242 - INFO : Train: Epoch: 1, batch: 640, train_loss: 0.7131, train_acc: 0.6360
+2020-01-16 11:28:21,171 - INFO : Train: Epoch: 1, batch: 660, train_loss: 0.7312, train_acc: 0.6390
+2020-01-16 11:28:38,133 - INFO : Train: Epoch: 1, batch: 680, train_loss: 0.6696, train_acc: 0.6730
+2020-01-16 11:28:55,093 - INFO : Train: Epoch: 1, batch: 700, train_loss: 0.6352, train_acc: 0.6620
+2020-01-16 11:29:12,026 - INFO : Train: Epoch: 1, batch: 720, train_loss: 0.7381, train_acc: 0.6650
+2020-01-16 11:29:28,957 - INFO : Train: Epoch: 1, batch: 740, train_loss: 0.6450, train_acc: 0.6750
+2020-01-16 11:29:45,904 - INFO : Train: Epoch: 1, batch: 760, train_loss: 0.6501, train_acc: 0.6960
+2020-01-16 11:30:02,842 - INFO : Train: Epoch: 1, batch: 780, train_loss: 0.6964, train_acc: 0.6690
+2020-01-16 11:30:19,778 - INFO : Train: Epoch: 1, batch: 800, train_loss: 0.6248, train_acc: 0.6900
+2020-01-16 11:30:19,779 - INFO : Start testing...
+2020-01-16 11:31:46,798 - INFO : Test: Epoch: 1 of 30000000 took: 1031.014s, test_acc: 0.6664(best: 0.6924), test_f1: 0.4268(best: 0.3670)
+2020-01-16 11:31:46,798 - INFO : Done! Total time= 2577.727s
+2020-01-16 11:32:03,734 - INFO : Train: Epoch: 1, batch: 820, train_loss: 0.6060, train_acc: 0.7020
+2020-01-16 11:32:20,637 - INFO : Train: Epoch: 1, batch: 840, train_loss: 0.6205, train_acc: 0.6550
+2020-01-16 11:32:37,570 - INFO : Train: Epoch: 1, batch: 860, train_loss: 0.6168, train_acc: 0.6830
+2020-01-16 11:32:54,494 - INFO : Train: Epoch: 1, batch: 880, train_loss: 0.6382, train_acc: 0.6630
+2020-01-16 11:33:11,415 - INFO : Train: Epoch: 1, batch: 900, train_loss: 0.5951, train_acc: 0.7050
+2020-01-16 11:33:28,352 - INFO : Train: Epoch: 1, batch: 920, train_loss: 0.5984, train_acc: 0.7060
+2020-01-16 11:33:45,289 - INFO : Train: Epoch: 1, batch: 940, train_loss: 0.6110, train_acc: 0.6830
+2020-01-16 11:34:02,239 - INFO : Train: Epoch: 1, batch: 960, train_loss: 0.6050, train_acc: 0.7070
+2020-01-16 11:34:19,174 - INFO : Train: Epoch: 1, batch: 980, train_loss: 0.5665, train_acc: 0.7300
+2020-01-16 11:34:36,492 - INFO : Train: Epoch: 1, batch: 1000, train_loss: 0.5796, train_acc: 0.7150
+2020-01-16 11:34:36,493 - INFO : Start testing...
+2020-01-16 11:36:02,842 - INFO : Test: Epoch: 1 of 30000000 took: 1287.727s, test_acc: 0.7185(best: 0.6924), test_f1: 0.4314(best: 0.3670)
+2020-01-16 11:36:02,842 - INFO : Done! Total time= 3865.454s
+2020-01-16 11:36:06,110 - INFO : Create highest acc: 0.7185146564708609
+2020-01-16 11:36:23,047 - INFO : Train: Epoch: 1, batch: 1020, train_loss: 0.5930, train_acc: 0.7110
+2020-01-16 11:36:39,999 - INFO : Train: Epoch: 1, batch: 1040, train_loss: 0.5670, train_acc: 0.7310
+2020-01-16 11:36:56,952 - INFO : Train: Epoch: 1, batch: 1060, train_loss: 0.5941, train_acc: 0.6880
+2020-01-16 11:37:13,879 - INFO : Train: Epoch: 1, batch: 1080, train_loss: 0.5893, train_acc: 0.7080
+2020-01-16 11:37:30,816 - INFO : Train: Epoch: 1, batch: 1100, train_loss: 0.5956, train_acc: 0.6950
+2020-01-16 11:37:47,719 - INFO : Train: Epoch: 1, batch: 1120, train_loss: 0.5505, train_acc: 0.7430
+2020-01-16 11:38:04,665 - INFO : Train: Epoch: 1, batch: 1140, train_loss: 0.5670, train_acc: 0.7280
+2020-01-16 11:38:21,596 - INFO : Train: Epoch: 1, batch: 1160, train_loss: 0.5920, train_acc: 0.6910
+2020-01-16 11:38:38,524 - INFO : Train: Epoch: 1, batch: 1180, train_loss: 0.5749, train_acc: 0.7190
+2020-01-16 11:38:55,451 - INFO : Train: Epoch: 1, batch: 1200, train_loss: 0.5801, train_acc: 0.7270
+2020-01-16 11:38:55,452 - INFO : Start testing...
+2020-01-16 11:40:22,189 - INFO : Test: Epoch: 1 of 30000000 took: 1546.686s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 11:40:22,189 - INFO : Done! Total time= 5412.141s
+2020-01-16 11:40:39,087 - INFO : Train: Epoch: 1, batch: 1220, train_loss: 0.5949, train_acc: 0.7090
+2020-01-16 11:40:55,997 - INFO : Train: Epoch: 1, batch: 1240, train_loss: 0.5967, train_acc: 0.6930
+2020-01-16 11:41:12,915 - INFO : Train: Epoch: 1, batch: 1260, train_loss: 0.5720, train_acc: 0.7320
+2020-01-16 11:41:29,863 - INFO : Train: Epoch: 1, batch: 1280, train_loss: 0.5837, train_acc: 0.7110
+2020-01-16 11:41:46,798 - INFO : Train: Epoch: 1, batch: 1300, train_loss: 0.5927, train_acc: 0.7090
+2020-01-16 11:42:03,730 - INFO : Train: Epoch: 1, batch: 1320, train_loss: 0.5707, train_acc: 0.7250
+2020-01-16 11:42:20,668 - INFO : Train: Epoch: 1, batch: 1340, train_loss: 0.5601, train_acc: 0.7290
+2020-01-16 11:42:37,605 - INFO : Train: Epoch: 1, batch: 1360, train_loss: 0.5895, train_acc: 0.7080
+2020-01-16 11:42:54,525 - INFO : Train: Epoch: 1, batch: 1380, train_loss: 0.5900, train_acc: 0.7150
+2020-01-16 11:43:11,455 - INFO : Train: Epoch: 1, batch: 1400, train_loss: 0.5659, train_acc: 0.7240
+2020-01-16 11:43:11,456 - INFO : Start testing...
+2020-01-16 11:44:37,754 - INFO : Test: Epoch: 1 of 30000000 took: 1802.690s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 11:44:37,754 - INFO : Done! Total time= 7214.831s
+2020-01-16 11:44:54,699 - INFO : Train: Epoch: 1, batch: 1420, train_loss: 0.5838, train_acc: 0.7180
+2020-01-16 11:45:11,597 - INFO : Train: Epoch: 1, batch: 1440, train_loss: 0.5957, train_acc: 0.7060
+2020-01-16 11:45:28,543 - INFO : Train: Epoch: 1, batch: 1460, train_loss: 0.6003, train_acc: 0.7030
+2020-01-16 11:45:45,464 - INFO : Train: Epoch: 1, batch: 1480, train_loss: 0.5771, train_acc: 0.7150
+2020-01-16 11:46:02,402 - INFO : Train: Epoch: 1, batch: 1500, train_loss: 0.5835, train_acc: 0.7020
+2020-01-16 11:46:19,329 - INFO : Train: Epoch: 1, batch: 1520, train_loss: 0.5803, train_acc: 0.7280
+2020-01-16 11:46:36,246 - INFO : Train: Epoch: 1, batch: 1540, train_loss: 0.5976, train_acc: 0.7070
+2020-01-16 11:46:53,174 - INFO : Train: Epoch: 1, batch: 1560, train_loss: 0.5945, train_acc: 0.6940
+2020-01-16 11:47:10,076 - INFO : Train: Epoch: 1, batch: 1580, train_loss: 0.5940, train_acc: 0.6940
+2020-01-16 11:47:27,028 - INFO : Train: Epoch: 1, batch: 1600, train_loss: 0.5858, train_acc: 0.6970
+2020-01-16 11:47:27,029 - INFO : Start testing...
+2020-01-16 11:48:53,408 - INFO : Test: Epoch: 1 of 30000000 took: 2058.264s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 11:48:53,408 - INFO : Done! Total time= 9273.094s
+2020-01-16 11:49:10,315 - INFO : Train: Epoch: 1, batch: 1620, train_loss: 0.5865, train_acc: 0.7120
+2020-01-16 11:49:27,263 - INFO : Train: Epoch: 1, batch: 1640, train_loss: 0.5643, train_acc: 0.7420
+2020-01-16 11:49:44,178 - INFO : Train: Epoch: 1, batch: 1660, train_loss: 0.5727, train_acc: 0.6990
+2020-01-16 11:50:01,111 - INFO : Train: Epoch: 1, batch: 1680, train_loss: 0.5511, train_acc: 0.7470
+2020-01-16 11:50:18,039 - INFO : Train: Epoch: 1, batch: 1700, train_loss: 0.5631, train_acc: 0.7350
+2020-01-16 11:50:35,007 - INFO : Train: Epoch: 1, batch: 1720, train_loss: 0.5613, train_acc: 0.7150
+2020-01-16 11:50:52,303 - INFO : Train: Epoch: 1, batch: 1740, train_loss: 0.6080, train_acc: 0.6790
+2020-01-16 11:51:09,650 - INFO : Train: Epoch: 1, batch: 1760, train_loss: 0.5828, train_acc: 0.7130
+2020-01-16 11:51:26,609 - INFO : Train: Epoch: 1, batch: 1780, train_loss: 0.5731, train_acc: 0.7250
+2020-01-16 11:51:43,575 - INFO : Train: Epoch: 1, batch: 1800, train_loss: 0.5719, train_acc: 0.7120
+2020-01-16 11:51:43,575 - INFO : Start testing...
+2020-01-16 11:53:09,926 - INFO : Test: Epoch: 1 of 30000000 took: 2314.810s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 11:53:09,926 - INFO : Done! Total time= 11587.905s
+2020-01-16 11:53:26,854 - INFO : Train: Epoch: 1, batch: 1820, train_loss: 0.5939, train_acc: 0.7130
+2020-01-16 11:53:43,805 - INFO : Train: Epoch: 1, batch: 1840, train_loss: 0.5586, train_acc: 0.7420
+2020-01-16 11:54:00,738 - INFO : Train: Epoch: 1, batch: 1860, train_loss: 0.5651, train_acc: 0.7180
+2020-01-16 11:54:18,113 - INFO : Train: Epoch: 1, batch: 1880, train_loss: 0.5690, train_acc: 0.7140
+2020-01-16 11:54:35,071 - INFO : Train: Epoch: 1, batch: 1900, train_loss: 0.6118, train_acc: 0.6930
+2020-01-16 11:54:52,023 - INFO : Train: Epoch: 1, batch: 1920, train_loss: 0.5779, train_acc: 0.7070
+2020-01-16 11:55:09,378 - INFO : Train: Epoch: 1, batch: 1940, train_loss: 0.5904, train_acc: 0.7040
+2020-01-16 11:55:26,334 - INFO : Train: Epoch: 1, batch: 1960, train_loss: 0.5733, train_acc: 0.7140
+2020-01-16 11:55:43,310 - INFO : Train: Epoch: 1, batch: 1980, train_loss: 0.5985, train_acc: 0.7060
+2020-01-16 11:56:00,272 - INFO : Train: Epoch: 1, batch: 2000, train_loss: 0.6033, train_acc: 0.7080
+2020-01-16 11:56:00,273 - INFO : Start testing...
+2020-01-16 11:57:27,417 - INFO : Test: Epoch: 1 of 30000000 took: 2571.508s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 11:57:27,417 - INFO : Done! Total time= 14159.413s
+2020-01-16 11:57:44,323 - INFO : Train: Epoch: 1, batch: 2020, train_loss: 0.5935, train_acc: 0.6960
+2020-01-16 11:58:01,263 - INFO : Train: Epoch: 1, batch: 2040, train_loss: 0.5813, train_acc: 0.7180
+2020-01-16 11:58:18,194 - INFO : Train: Epoch: 1, batch: 2060, train_loss: 0.5703, train_acc: 0.7120
+2020-01-16 11:58:35,148 - INFO : Train: Epoch: 1, batch: 2080, train_loss: 0.5864, train_acc: 0.7130
+2020-01-16 11:58:52,072 - INFO : Train: Epoch: 1, batch: 2100, train_loss: 0.5708, train_acc: 0.7120
+2020-01-16 11:59:08,994 - INFO : Train: Epoch: 1, batch: 2120, train_loss: 0.5620, train_acc: 0.7220
+2020-01-16 11:59:25,945 - INFO : Train: Epoch: 1, batch: 2140, train_loss: 0.5886, train_acc: 0.7010
+2020-01-16 11:59:42,905 - INFO : Train: Epoch: 1, batch: 2160, train_loss: 0.5724, train_acc: 0.7100
+2020-01-16 11:59:59,840 - INFO : Train: Epoch: 1, batch: 2180, train_loss: 0.6066, train_acc: 0.6920
+2020-01-16 12:00:16,752 - INFO : Train: Epoch: 1, batch: 2200, train_loss: 0.5797, train_acc: 0.7140
+2020-01-16 12:00:16,753 - INFO : Start testing...
+2020-01-16 12:01:43,565 - INFO : Test: Epoch: 1 of 30000000 took: 2827.988s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:01:43,566 - INFO : Done! Total time= 16987.400s
+2020-01-16 12:02:00,487 - INFO : Train: Epoch: 1, batch: 2220, train_loss: 0.5832, train_acc: 0.7200
+2020-01-16 12:02:17,430 - INFO : Train: Epoch: 1, batch: 2240, train_loss: 0.5753, train_acc: 0.7090
+2020-01-16 12:02:34,790 - INFO : Train: Epoch: 1, batch: 2260, train_loss: 0.5684, train_acc: 0.7270
+2020-01-16 12:02:51,713 - INFO : Train: Epoch: 1, batch: 2280, train_loss: 0.5755, train_acc: 0.7130
+2020-01-16 12:03:09,047 - INFO : Train: Epoch: 1, batch: 2300, train_loss: 0.6119, train_acc: 0.6810
+2020-01-16 12:03:25,984 - INFO : Train: Epoch: 1, batch: 2320, train_loss: 0.5697, train_acc: 0.7170
+2020-01-16 12:03:42,937 - INFO : Train: Epoch: 1, batch: 2340, train_loss: 0.6002, train_acc: 0.6870
+2020-01-16 12:03:59,849 - INFO : Train: Epoch: 1, batch: 2360, train_loss: 0.5738, train_acc: 0.7060
+2020-01-16 12:04:16,778 - INFO : Train: Epoch: 1, batch: 2380, train_loss: 0.6013, train_acc: 0.7050
+2020-01-16 12:04:33,712 - INFO : Train: Epoch: 1, batch: 2400, train_loss: 0.5987, train_acc: 0.6990
+2020-01-16 12:04:33,713 - INFO : Start testing...
+2020-01-16 12:06:00,433 - INFO : Test: Epoch: 1 of 30000000 took: 3084.948s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:06:00,433 - INFO : Done! Total time= 20072.348s
+2020-01-16 12:06:17,344 - INFO : Train: Epoch: 1, batch: 2420, train_loss: 0.5667, train_acc: 0.7420
+2020-01-16 12:06:34,284 - INFO : Train: Epoch: 1, batch: 2440, train_loss: 0.5778, train_acc: 0.7130
+2020-01-16 12:06:51,198 - INFO : Train: Epoch: 1, batch: 2460, train_loss: 0.5634, train_acc: 0.7270
+2020-01-16 12:07:08,100 - INFO : Train: Epoch: 1, batch: 2480, train_loss: 0.5948, train_acc: 0.7020
+2020-01-16 12:07:25,038 - INFO : Train: Epoch: 1, batch: 2500, train_loss: 0.5801, train_acc: 0.7000
+2020-01-16 12:07:41,986 - INFO : Train: Epoch: 1, batch: 2520, train_loss: 0.5984, train_acc: 0.6990
+2020-01-16 12:07:58,919 - INFO : Train: Epoch: 1, batch: 2540, train_loss: 0.5685, train_acc: 0.7110
+2020-01-16 12:08:15,825 - INFO : Train: Epoch: 1, batch: 2560, train_loss: 0.5564, train_acc: 0.7270
+2020-01-16 12:08:32,735 - INFO : Train: Epoch: 1, batch: 2580, train_loss: 0.5883, train_acc: 0.6980
+2020-01-16 12:08:49,687 - INFO : Train: Epoch: 1, batch: 2600, train_loss: 0.5706, train_acc: 0.7020
+2020-01-16 12:08:49,688 - INFO : Start testing...
+2020-01-16 12:10:16,012 - INFO : Test: Epoch: 1 of 30000000 took: 3340.923s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:10:16,012 - INFO : Done! Total time= 23413.271s
+2020-01-16 12:10:32,940 - INFO : Train: Epoch: 1, batch: 2620, train_loss: 0.5934, train_acc: 0.6980
+2020-01-16 12:10:49,858 - INFO : Train: Epoch: 1, batch: 2640, train_loss: 0.5973, train_acc: 0.7060
+2020-01-16 12:11:06,804 - INFO : Train: Epoch: 1, batch: 2660, train_loss: 0.6050, train_acc: 0.6890
+2020-01-16 12:11:23,743 - INFO : Train: Epoch: 1, batch: 2680, train_loss: 0.5661, train_acc: 0.7220
+2020-01-16 12:11:40,696 - INFO : Train: Epoch: 1, batch: 2700, train_loss: 0.5814, train_acc: 0.7060
+2020-01-16 12:11:57,631 - INFO : Train: Epoch: 1, batch: 2720, train_loss: 0.6093, train_acc: 0.6960
+2020-01-16 12:12:14,592 - INFO : Train: Epoch: 1, batch: 2740, train_loss: 0.5734, train_acc: 0.7130
+2020-01-16 12:12:31,519 - INFO : Train: Epoch: 1, batch: 2760, train_loss: 0.5700, train_acc: 0.7320
+2020-01-16 12:12:48,456 - INFO : Train: Epoch: 1, batch: 2780, train_loss: 0.5778, train_acc: 0.7090
+2020-01-16 12:13:05,397 - INFO : Train: Epoch: 1, batch: 2800, train_loss: 0.5725, train_acc: 0.7200
+2020-01-16 12:13:05,398 - INFO : Start testing...
+2020-01-16 12:14:31,726 - INFO : Test: Epoch: 1 of 30000000 took: 3596.633s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:14:31,726 - INFO : Done! Total time= 27009.904s
+2020-01-16 12:14:48,630 - INFO : Train: Epoch: 1, batch: 2820, train_loss: 0.5602, train_acc: 0.7270
+2020-01-16 12:15:05,549 - INFO : Train: Epoch: 1, batch: 2840, train_loss: 0.5887, train_acc: 0.7060
+2020-01-16 12:15:22,477 - INFO : Train: Epoch: 1, batch: 2860, train_loss: 0.5597, train_acc: 0.7340
+2020-01-16 12:15:39,396 - INFO : Train: Epoch: 1, batch: 2880, train_loss: 0.5992, train_acc: 0.6880
+2020-01-16 12:15:56,333 - INFO : Train: Epoch: 1, batch: 2900, train_loss: 0.6187, train_acc: 0.6820
+2020-01-16 12:16:13,245 - INFO : Train: Epoch: 1, batch: 2920, train_loss: 0.5815, train_acc: 0.7240
+2020-01-16 12:16:30,208 - INFO : Train: Epoch: 1, batch: 2940, train_loss: 0.5807, train_acc: 0.7130
+2020-01-16 12:16:47,149 - INFO : Train: Epoch: 1, batch: 2960, train_loss: 0.5995, train_acc: 0.7060
+2020-01-16 12:17:04,101 - INFO : Train: Epoch: 1, batch: 2980, train_loss: 0.5945, train_acc: 0.6880
+2020-01-16 12:17:21,040 - INFO : Train: Epoch: 1, batch: 3000, train_loss: 0.5882, train_acc: 0.7150
+2020-01-16 12:17:21,041 - INFO : Start testing...
+2020-01-16 12:18:47,370 - INFO : Test: Epoch: 1 of 30000000 took: 3852.276s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:18:47,370 - INFO : Done! Total time= 30862.180s
+2020-01-16 12:19:04,271 - INFO : Train: Epoch: 1, batch: 3020, train_loss: 0.5716, train_acc: 0.7210
+2020-01-16 12:19:21,188 - INFO : Train: Epoch: 1, batch: 3040, train_loss: 0.6034, train_acc: 0.6940
+2020-01-16 12:19:38,140 - INFO : Train: Epoch: 1, batch: 3060, train_loss: 0.6112, train_acc: 0.6860
+2020-01-16 12:19:55,061 - INFO : Train: Epoch: 1, batch: 3080, train_loss: 0.5858, train_acc: 0.7080
+2020-01-16 12:20:11,997 - INFO : Train: Epoch: 1, batch: 3100, train_loss: 0.5877, train_acc: 0.7110
+2020-01-16 12:20:28,935 - INFO : Train: Epoch: 1, batch: 3120, train_loss: 0.5752, train_acc: 0.7200
+2020-01-16 12:20:45,876 - INFO : Train: Epoch: 1, batch: 3140, train_loss: 0.5769, train_acc: 0.7190
+2020-01-16 12:21:02,824 - INFO : Train: Epoch: 1, batch: 3160, train_loss: 0.5591, train_acc: 0.7220
+2020-01-16 12:21:19,755 - INFO : Train: Epoch: 1, batch: 3180, train_loss: 0.6099, train_acc: 0.7020
+2020-01-16 12:21:36,722 - INFO : Train: Epoch: 1, batch: 3200, train_loss: 0.5587, train_acc: 0.7300
+2020-01-16 12:21:36,723 - INFO : Start testing...
+2020-01-16 12:23:03,046 - INFO : Test: Epoch: 1 of 30000000 took: 4107.958s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:23:03,046 - INFO : Done! Total time= 34970.137s
+2020-01-16 12:23:19,930 - INFO : Train: Epoch: 1, batch: 3220, train_loss: 0.5790, train_acc: 0.7130
+2020-01-16 12:23:36,856 - INFO : Train: Epoch: 1, batch: 3240, train_loss: 0.5934, train_acc: 0.7180
+2020-01-16 12:23:53,774 - INFO : Train: Epoch: 1, batch: 3260, train_loss: 0.5850, train_acc: 0.7200
+2020-01-16 12:24:10,670 - INFO : Train: Epoch: 1, batch: 3280, train_loss: 0.5930, train_acc: 0.7040
+2020-01-16 12:24:27,596 - INFO : Train: Epoch: 1, batch: 3300, train_loss: 0.5792, train_acc: 0.7110
+2020-01-16 12:24:44,529 - INFO : Train: Epoch: 1, batch: 3320, train_loss: 0.5814, train_acc: 0.7190
+2020-01-16 12:25:01,434 - INFO : Train: Epoch: 1, batch: 3340, train_loss: 0.5702, train_acc: 0.7260
+2020-01-16 12:25:18,345 - INFO : Train: Epoch: 1, batch: 3360, train_loss: 0.5648, train_acc: 0.7250
+2020-01-16 12:25:35,279 - INFO : Train: Epoch: 1, batch: 3380, train_loss: 0.5737, train_acc: 0.7030
+2020-01-16 12:25:52,213 - INFO : Train: Epoch: 1, batch: 3400, train_loss: 0.5797, train_acc: 0.7200
+2020-01-16 12:25:52,214 - INFO : Start testing...
+2020-01-16 12:27:18,529 - INFO : Test: Epoch: 1 of 30000000 took: 4363.449s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:27:18,530 - INFO : Done! Total time= 39333.586s
+2020-01-16 12:27:35,449 - INFO : Train: Epoch: 1, batch: 3420, train_loss: 0.5689, train_acc: 0.7170
+2020-01-16 12:27:52,360 - INFO : Train: Epoch: 1, batch: 3440, train_loss: 0.5812, train_acc: 0.7160
+2020-01-16 12:28:09,290 - INFO : Train: Epoch: 1, batch: 3460, train_loss: 0.5826, train_acc: 0.7090
+2020-01-16 12:28:26,204 - INFO : Train: Epoch: 1, batch: 3480, train_loss: 0.5799, train_acc: 0.7120
+2020-01-16 12:28:43,130 - INFO : Train: Epoch: 1, batch: 3500, train_loss: 0.5629, train_acc: 0.7310
+2020-01-16 12:29:00,084 - INFO : Train: Epoch: 1, batch: 3520, train_loss: 0.5591, train_acc: 0.7260
+2020-01-16 12:29:17,012 - INFO : Train: Epoch: 1, batch: 3540, train_loss: 0.5871, train_acc: 0.7140
+2020-01-16 12:29:30,044 - INFO : Train: Epoch: 2, batch: 0, train_loss: 0.5995, train_acc: 0.7000
+2020-01-16 12:29:30,045 - INFO : Start testing...
+2020-01-16 12:30:56,391 - INFO : Test: Epoch: 2 of 30000000 took: 0.852s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:30:56,392 - INFO : Done! Total time= 39334.438s
+2020-01-16 12:31:13,295 - INFO : Train: Epoch: 2, batch: 20, train_loss: 0.5676, train_acc: 0.7150
+2020-01-16 12:31:30,230 - INFO : Train: Epoch: 2, batch: 40, train_loss: 0.5990, train_acc: 0.7060
+2020-01-16 12:31:47,177 - INFO : Train: Epoch: 2, batch: 60, train_loss: 0.5720, train_acc: 0.7320
+2020-01-16 12:32:04,136 - INFO : Train: Epoch: 2, batch: 80, train_loss: 0.5680, train_acc: 0.7310
+2020-01-16 12:32:21,062 - INFO : Train: Epoch: 2, batch: 100, train_loss: 0.5740, train_acc: 0.7020
+2020-01-16 12:32:38,003 - INFO : Train: Epoch: 2, batch: 120, train_loss: 0.5761, train_acc: 0.7060
+2020-01-16 12:32:54,942 - INFO : Train: Epoch: 2, batch: 140, train_loss: 0.5798, train_acc: 0.7020
+2020-01-16 12:33:11,890 - INFO : Train: Epoch: 2, batch: 160, train_loss: 0.5526, train_acc: 0.7380
+2020-01-16 12:33:28,847 - INFO : Train: Epoch: 2, batch: 180, train_loss: 0.5804, train_acc: 0.7030
+2020-01-16 12:33:45,769 - INFO : Train: Epoch: 2, batch: 200, train_loss: 0.5574, train_acc: 0.7370
+2020-01-16 12:33:45,770 - INFO : Start testing...
+2020-01-16 12:35:12,164 - INFO : Test: Epoch: 2 of 30000000 took: 256.578s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:35:12,164 - INFO : Done! Total time= 39591.016s
+2020-01-16 12:35:29,091 - INFO : Train: Epoch: 2, batch: 220, train_loss: 0.5879, train_acc: 0.7090
+2020-01-16 12:35:46,031 - INFO : Train: Epoch: 2, batch: 240, train_loss: 0.5664, train_acc: 0.7300
+2020-01-16 12:36:02,980 - INFO : Train: Epoch: 2, batch: 260, train_loss: 0.5775, train_acc: 0.7260
+2020-01-16 12:36:19,933 - INFO : Train: Epoch: 2, batch: 280, train_loss: 0.5786, train_acc: 0.7170
+2020-01-16 12:36:36,859 - INFO : Train: Epoch: 2, batch: 300, train_loss: 0.5839, train_acc: 0.7060
+2020-01-16 12:36:53,794 - INFO : Train: Epoch: 2, batch: 320, train_loss: 0.5763, train_acc: 0.7180
+2020-01-16 12:37:10,756 - INFO : Train: Epoch: 2, batch: 340, train_loss: 0.5863, train_acc: 0.7010
+2020-01-16 12:37:27,709 - INFO : Train: Epoch: 2, batch: 360, train_loss: 0.5756, train_acc: 0.7190
+2020-01-16 12:37:44,646 - INFO : Train: Epoch: 2, batch: 380, train_loss: 0.5624, train_acc: 0.7190
+2020-01-16 12:38:01,582 - INFO : Train: Epoch: 2, batch: 400, train_loss: 0.5613, train_acc: 0.7250
+2020-01-16 12:38:01,583 - INFO : Start testing...
+2020-01-16 12:39:27,927 - INFO : Test: Epoch: 2 of 30000000 took: 512.390s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:39:27,928 - INFO : Done! Total time= 40103.406s
+2020-01-16 12:39:44,866 - INFO : Train: Epoch: 2, batch: 420, train_loss: 0.6010, train_acc: 0.6990
+2020-01-16 12:40:01,792 - INFO : Train: Epoch: 2, batch: 440, train_loss: 0.5707, train_acc: 0.7250
+2020-01-16 12:40:18,722 - INFO : Train: Epoch: 2, batch: 460, train_loss: 0.5737, train_acc: 0.7230
+2020-01-16 12:40:35,657 - INFO : Train: Epoch: 2, batch: 480, train_loss: 0.5620, train_acc: 0.7170
+2020-01-16 12:40:52,577 - INFO : Train: Epoch: 2, batch: 500, train_loss: 0.5599, train_acc: 0.7280
+2020-01-16 12:41:09,512 - INFO : Train: Epoch: 2, batch: 520, train_loss: 0.5752, train_acc: 0.7250
+2020-01-16 12:41:26,467 - INFO : Train: Epoch: 2, batch: 540, train_loss: 0.5963, train_acc: 0.7070
+2020-01-16 12:41:43,418 - INFO : Train: Epoch: 2, batch: 560, train_loss: 0.5982, train_acc: 0.6980
+2020-01-16 12:42:00,340 - INFO : Train: Epoch: 2, batch: 580, train_loss: 0.5987, train_acc: 0.7120
+2020-01-16 12:42:17,284 - INFO : Train: Epoch: 2, batch: 600, train_loss: 0.5799, train_acc: 0.7110
+2020-01-16 12:42:17,285 - INFO : Start testing...
+2020-01-16 12:43:43,632 - INFO : Test: Epoch: 2 of 30000000 took: 768.092s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:43:43,632 - INFO : Done! Total time= 40871.499s
+2020-01-16 12:44:00,584 - INFO : Train: Epoch: 2, batch: 620, train_loss: 0.5995, train_acc: 0.6940
+2020-01-16 12:44:17,519 - INFO : Train: Epoch: 2, batch: 640, train_loss: 0.5689, train_acc: 0.7180
+2020-01-16 12:44:34,489 - INFO : Train: Epoch: 2, batch: 660, train_loss: 0.5784, train_acc: 0.7190
+2020-01-16 12:44:51,406 - INFO : Train: Epoch: 2, batch: 680, train_loss: 0.5844, train_acc: 0.7250
+2020-01-16 12:45:08,390 - INFO : Train: Epoch: 2, batch: 700, train_loss: 0.5646, train_acc: 0.7330
+2020-01-16 12:45:25,349 - INFO : Train: Epoch: 2, batch: 720, train_loss: 0.5809, train_acc: 0.7010
+2020-01-16 12:45:42,315 - INFO : Train: Epoch: 2, batch: 740, train_loss: 0.5637, train_acc: 0.7240
+2020-01-16 12:45:59,684 - INFO : Train: Epoch: 2, batch: 760, train_loss: 0.5712, train_acc: 0.7260
+2020-01-16 12:46:16,738 - INFO : Train: Epoch: 2, batch: 780, train_loss: 0.5776, train_acc: 0.7070
+2020-01-16 12:46:33,851 - INFO : Train: Epoch: 2, batch: 800, train_loss: 0.5941, train_acc: 0.7010
+2020-01-16 12:46:33,852 - INFO : Start testing...
+2020-01-16 12:48:00,311 - INFO : Test: Epoch: 2 of 30000000 took: 1024.659s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:48:00,311 - INFO : Done! Total time= 41896.158s
+2020-01-16 12:48:17,228 - INFO : Train: Epoch: 2, batch: 820, train_loss: 0.5713, train_acc: 0.7220
+2020-01-16 12:48:34,174 - INFO : Train: Epoch: 2, batch: 840, train_loss: 0.5951, train_acc: 0.6900
+2020-01-16 12:48:51,121 - INFO : Train: Epoch: 2, batch: 860, train_loss: 0.5765, train_acc: 0.7030
+2020-01-16 12:49:08,058 - INFO : Train: Epoch: 2, batch: 880, train_loss: 0.5873, train_acc: 0.7200
+2020-01-16 12:49:25,014 - INFO : Train: Epoch: 2, batch: 900, train_loss: 0.5907, train_acc: 0.7040
+2020-01-16 12:49:41,991 - INFO : Train: Epoch: 2, batch: 920, train_loss: 0.5700, train_acc: 0.7210
+2020-01-16 12:49:58,934 - INFO : Train: Epoch: 2, batch: 940, train_loss: 0.5605, train_acc: 0.7330
+2020-01-16 12:50:15,864 - INFO : Train: Epoch: 2, batch: 960, train_loss: 0.5947, train_acc: 0.6990
+2020-01-16 12:50:32,836 - INFO : Train: Epoch: 2, batch: 980, train_loss: 0.5912, train_acc: 0.6970
+2020-01-16 12:50:49,758 - INFO : Train: Epoch: 2, batch: 1000, train_loss: 0.5482, train_acc: 0.7330
+2020-01-16 12:50:49,759 - INFO : Start testing...
+2020-01-16 12:52:16,170 - INFO : Test: Epoch: 2 of 30000000 took: 1280.566s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:52:16,170 - INFO : Done! Total time= 43176.724s
+2020-01-16 12:52:33,111 - INFO : Train: Epoch: 2, batch: 1020, train_loss: 0.5862, train_acc: 0.7070
+2020-01-16 12:52:50,035 - INFO : Train: Epoch: 2, batch: 1040, train_loss: 0.5766, train_acc: 0.7020
+2020-01-16 12:53:06,988 - INFO : Train: Epoch: 2, batch: 1060, train_loss: 0.5724, train_acc: 0.7170
+2020-01-16 12:53:24,302 - INFO : Train: Epoch: 2, batch: 1080, train_loss: 0.5495, train_acc: 0.7330
+2020-01-16 12:53:41,240 - INFO : Train: Epoch: 2, batch: 1100, train_loss: 0.5758, train_acc: 0.7160
+2020-01-16 12:53:58,194 - INFO : Train: Epoch: 2, batch: 1120, train_loss: 0.5575, train_acc: 0.7230
+2020-01-16 12:54:15,130 - INFO : Train: Epoch: 2, batch: 1140, train_loss: 0.5472, train_acc: 0.7490
+2020-01-16 12:54:32,458 - INFO : Train: Epoch: 2, batch: 1160, train_loss: 0.5804, train_acc: 0.6950
+2020-01-16 12:54:49,487 - INFO : Train: Epoch: 2, batch: 1180, train_loss: 0.5753, train_acc: 0.7070
+2020-01-16 12:55:06,423 - INFO : Train: Epoch: 2, batch: 1200, train_loss: 0.5733, train_acc: 0.7120
+2020-01-16 12:55:06,424 - INFO : Start testing...
+2020-01-16 12:56:32,886 - INFO : Test: Epoch: 2 of 30000000 took: 1537.232s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 12:56:32,887 - INFO : Done! Total time= 44713.956s
+2020-01-16 12:56:49,785 - INFO : Train: Epoch: 2, batch: 1220, train_loss: 0.5849, train_acc: 0.7110
+2020-01-16 12:57:06,732 - INFO : Train: Epoch: 2, batch: 1240, train_loss: 0.5987, train_acc: 0.6960
+2020-01-16 12:57:23,996 - INFO : Train: Epoch: 2, batch: 1260, train_loss: 0.5399, train_acc: 0.7330
+2020-01-16 12:57:41,029 - INFO : Train: Epoch: 2, batch: 1280, train_loss: 0.5688, train_acc: 0.7130
+2020-01-16 12:57:57,956 - INFO : Train: Epoch: 2, batch: 1300, train_loss: 0.5678, train_acc: 0.7120
+2020-01-16 12:58:14,953 - INFO : Train: Epoch: 2, batch: 1320, train_loss: 0.5983, train_acc: 0.7100
+2020-01-16 12:58:31,922 - INFO : Train: Epoch: 2, batch: 1340, train_loss: 0.5597, train_acc: 0.7310
+2020-01-16 12:58:48,895 - INFO : Train: Epoch: 2, batch: 1360, train_loss: 0.5739, train_acc: 0.7090
+2020-01-16 12:59:05,834 - INFO : Train: Epoch: 2, batch: 1380, train_loss: 0.5789, train_acc: 0.7050
+2020-01-16 12:59:22,802 - INFO : Train: Epoch: 2, batch: 1400, train_loss: 0.5994, train_acc: 0.6960
+2020-01-16 12:59:22,803 - INFO : Start testing...
+2020-01-16 13:00:49,212 - INFO : Test: Epoch: 2 of 30000000 took: 1793.611s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 13:00:49,213 - INFO : Done! Total time= 46507.567s
+2020-01-16 13:01:06,135 - INFO : Train: Epoch: 2, batch: 1420, train_loss: 0.5879, train_acc: 0.7130
+2020-01-16 13:01:23,085 - INFO : Train: Epoch: 2, batch: 1440, train_loss: 0.5806, train_acc: 0.7070
+2020-01-16 13:01:40,030 - INFO : Train: Epoch: 2, batch: 1460, train_loss: 0.5587, train_acc: 0.7200
+2020-01-16 13:01:56,962 - INFO : Train: Epoch: 2, batch: 1480, train_loss: 0.5699, train_acc: 0.7120
+2020-01-16 13:02:13,893 - INFO : Train: Epoch: 2, batch: 1500, train_loss: 0.5728, train_acc: 0.7240
+2020-01-16 13:02:30,879 - INFO : Train: Epoch: 2, batch: 1520, train_loss: 0.6005, train_acc: 0.7030
+2020-01-16 13:02:47,844 - INFO : Train: Epoch: 2, batch: 1540, train_loss: 0.5784, train_acc: 0.7100
+2020-01-16 13:03:04,822 - INFO : Train: Epoch: 2, batch: 1560, train_loss: 0.5667, train_acc: 0.7220
+2020-01-16 13:03:21,752 - INFO : Train: Epoch: 2, batch: 1580, train_loss: 0.5787, train_acc: 0.6980
+2020-01-16 13:03:38,708 - INFO : Train: Epoch: 2, batch: 1600, train_loss: 0.5854, train_acc: 0.7200
+2020-01-16 13:03:38,709 - INFO : Start testing...
+2020-01-16 13:05:05,078 - INFO : Test: Epoch: 2 of 30000000 took: 2049.516s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 13:05:05,078 - INFO : Done! Total time= 48557.083s
+2020-01-16 13:05:22,006 - INFO : Train: Epoch: 2, batch: 1620, train_loss: 0.5956, train_acc: 0.6820
+2020-01-16 13:05:38,926 - INFO : Train: Epoch: 2, batch: 1640, train_loss: 0.5728, train_acc: 0.7260
+2020-01-16 13:05:55,853 - INFO : Train: Epoch: 2, batch: 1660, train_loss: 0.5772, train_acc: 0.7180
+2020-01-16 13:06:12,768 - INFO : Train: Epoch: 2, batch: 1680, train_loss: 0.5673, train_acc: 0.7340
+2020-01-16 13:06:29,721 - INFO : Train: Epoch: 2, batch: 1700, train_loss: 0.5804, train_acc: 0.7210
+2020-01-16 13:06:46,641 - INFO : Train: Epoch: 2, batch: 1720, train_loss: 0.5676, train_acc: 0.7300
+2020-01-16 13:07:03,575 - INFO : Train: Epoch: 2, batch: 1740, train_loss: 0.5395, train_acc: 0.7500
+2020-01-16 13:07:20,515 - INFO : Train: Epoch: 2, batch: 1760, train_loss: 0.5797, train_acc: 0.7170
+2020-01-16 13:07:37,455 - INFO : Train: Epoch: 2, batch: 1780, train_loss: 0.5505, train_acc: 0.7360
+2020-01-16 13:07:54,419 - INFO : Train: Epoch: 2, batch: 1800, train_loss: 0.5665, train_acc: 0.7220
+2020-01-16 13:07:54,420 - INFO : Start testing...
+2020-01-16 13:09:20,799 - INFO : Test: Epoch: 2 of 30000000 took: 2305.228s, test_acc: 0.7185(best: 0.7185), test_f1: 0.4314(best: 0.4314)
+2020-01-16 13:09:20,799 - INFO : Done! Total time= 50862.311s
+2020-01-16 13:09:37,717 - INFO : Train: Epoch: 2, batch: 1820, train_loss: 0.5658, train_acc: 0.7200
+2020-01-16 13:09:54,648 - INFO : Train: Epoch: 2, batch: 1840, train_loss: 0.5686, train_acc: 0.7150
+2020-01-16 13:10:11,563 - INFO : Train: Epoch: 2, batch: 1860, train_loss: 0.5606, train_acc: 0.7360
+2020-01-16 13:10:28,479 - INFO : Train: Epoch: 2, batch: 1880, train_loss: 0.5790, train_acc: 0.7130
+2020-01-16 13:10:45,448 - INFO : Train: Epoch: 2, batch: 1900, train_loss: 0.5546, train_acc: 0.7290
+2020-01-16 13:11:02,393 - INFO : Train: Epoch: 2, batch: 1920, train_loss: 0.5787, train_acc: 0.7110
+2020-01-16 13:11:19,347 - INFO : Train: Epoch: 2, batch: 1940, train_loss: 0.5561, train_acc: 0.7440
+2020-01-16 13:11:36,285 - INFO : Train: Epoch: 2, batch: 1960, train_loss: 0.5853, train_acc: 0.7240
+2020-01-16 13:11:53,243 - INFO : Train: Epoch: 2, batch: 1980, train_loss: 0.5653, train_acc: 0.7250
+2020-01-16 13:12:10,192 - INFO : Train: Epoch: 2, batch: 2000, train_loss: 0.5720, train_acc: 0.7120
+2020-01-16 13:12:10,193 - INFO : Start testing...
