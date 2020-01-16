@@ -14,10 +14,19 @@ We build a review assistant based on the “Amazon Fine Food Reviews” Dataset.
 
 Our highlights:
 - We develop an visualization system to interpret the results of our review analysis models.
-![](./file/analyze.gif)
+![](./analyze.gif)
+
+
+
+
+---
+
+
+
+
 
 - Our system can perform on-time auto-completion and summarization in an user-friendly way.
-![](./file/generation.gif)
+![](./generation.gif)
 
 
 
