@@ -5,6 +5,8 @@
 >
 > Group Member: Ke Wang, Zi Chai and Danyang Li
 
+![](./analyze0.gif)
+
 ## Introduction
 In the field of Natural Language Learning (NLP), we focus on explaining “why this prediction is make by a black-box Machine Learning (ML) model” and making more non-exporters enjoy the convenience brought by ML models.
 
